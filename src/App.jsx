@@ -11,7 +11,6 @@ function App() {
     axios.get('https://pokeapi.co/api/v2/pokemon').then(res => {
       setPokemon(res.data.results.map(p => p.name))
       console.log(res.data.results);
-      console.log(res.data)
     })
   }, [])
 
